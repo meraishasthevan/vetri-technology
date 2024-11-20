@@ -1,0 +1,119 @@
+
+.python-learn-container {
+    width:80%;
+    margin:auto;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.python-learn-title {
+    font-size: 2.5rem;
+    color: rgb(17, 2, 53);  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-bottom: 50px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+.python-learn-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FF6347; 
+    margin: 8px auto;
+    border-radius: 2px;
+  }
+
+.python-learn-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.python-learn-card {
+    background: linear-gradient(135deg, #ffffff, #d3d3d3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.python-learn-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: bounce 2s infinite;
+}
+
+.python-learn-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: rgb(17, 2, 53);  
+}
+
+.python-learn-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color:black;
+}
+
+.additional-info {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color:black;
+}
+.additional-info strong{
+    color:#FF6347;
+}
+
+@media (max-width: 768px) {
+    .python-learn-title {
+        font-size: 2rem;
+    }
+    .python-learn-card {
+        padding: 15px;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

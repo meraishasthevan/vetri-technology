@@ -1,0 +1,111 @@
+.uiux-certification-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.uiux-certification-container h1 {
+    font-size: 2.3rem;
+    color: rgb(17, 2, 53); 
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.uiux-certification-container h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #FF6347;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.uiux-certification-container h4 {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .uiux-certification-container h4 {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+.uiux-certification-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.uiux-certification-img img {
+    width: 60%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uiux-certification-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+/* 
+.certification-btn {
+    background-color: #0d47a1;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.certification-btn:hover {
+    background-color: #0a3673;
+} */
+
+@media (max-width: 600px) {
+    .uiux-certification-container {
+        padding: 20px;
+    }
+    .uiux-certification-container h1 {
+        font-size: 2.5rem;
+    }
+    .uiux-certification-container h4 {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+    .certification-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .uiux-certification-container {
+        padding: 50px;
+    }
+}

@@ -1,0 +1,123 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background: linear-gradient(to right, orange, navy); */
+    padding: 10px 30px;
+    font-family: Arial, sans-serif;
+    color: white;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.fixed-top {
+    position: relative; 
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    /* padding: 15px 0; */
+}
+
+.navbar-logo img {
+    height: 90px; 
+    object-fit: contain;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: navy;
+    position: relative;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgb(232, 110, 9);
+}
+
+.mega-menu-content {
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;
+    justify-content: center;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: navy;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border-top: 3px solid orange;
+    min-width: 400px; 
+}
+.mega-item {
+    text-align: center;
+    color: navy;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 150px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
+}
+
+.mega-item:hover {
+    transform: translateY(-5px);
+    background-color: orange;
+    color: white;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: navy;
+    transition: transform 0.5s ease;
+}
+.mega-item:hover .icon {
+    transform: rotate(360deg); 
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mega-menu-content {
+        flex-direction: column; 
+        position: static;
+        transform: none;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .mega-item {
+        width: 100%; 
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+}

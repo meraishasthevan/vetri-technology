@@ -1,0 +1,169 @@
+#py-about {
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: rgb(17, 2, 53);  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-bottom: 30px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .section-title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FF6347; 
+    margin: 8px auto;
+    border-radius: 2px;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .python-about-container {
+    width:80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: linear-gradient(135deg, #ffffff, #d3d3d3); */
+    background: linear-gradient(135deg, #000080, #40E0D0);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .about-image-py img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: scaleRotate 5s infinite ease-in-out;  }
+  
+  .about-image-py img:hover {
+    transform: scale(1.05);
+  }
+  @keyframes scaleRotate {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    25% {
+      transform: scale(1.05) rotate(5deg);
+    }
+    50% {
+      transform: scale(1) rotate(10deg);
+    }
+    75% {
+      transform: scale(1.05) rotate(5deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  
+  .about-content {
+    max-width: 55%;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    color:white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  .about-description {
+    color:white;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .about-points {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .about-points p strong{
+    color:white;
+    font-size: 20px;
+  }
+  
+  .about-points ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .about-points li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color:white;
+  }
+  
+  .about-points i {
+    margin-right: 10px; 
+    color: black;      
+  }
+  
+  
+  @media (max-width: 768px) {
+    .python-about-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .about-content {
+      max-width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .about-title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .about-points {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .about-image-py img {
+        width: 80%;
+        max-width: 400px;
+      }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

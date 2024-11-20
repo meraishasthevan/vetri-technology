@@ -1,0 +1,107 @@
+.python-modules-container {
+    width:70%;
+    margin:auto;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .modules-title {
+    font-size: 2.5rem;
+    color: rgb(17, 2, 53);  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-bottom: 50px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+  }
+  .modules-title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FF6347; 
+    margin: 8px auto;
+    border-radius: 2px;
+  }
+  
+  .accordion-day {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .accordion-header {
+    padding: 15px;
+    background-color: rgb(17, 2, 53);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .accordion-header h2{
+    font-size: 1.3rem;
+  }
+  
+  /* .accordion-header:hover {
+    background: linear-gradient(135deg, #ffffff, #d3d3d3);
+    color:rgb(17, 2, 53);
+} */
+  
+  .accordion-icon {
+    font-size: 1.5rem;
+  }
+  
+  .accordion-content {
+    padding: 20px;
+    border-radius: 10px;
+    color:black;
+  }
+  
+  .module-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #ffffff, #d3d3d3);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .module-item:hover {
+    transform: translateX(5px);
+  }
+  
+  .module-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #FF6347;
+  }
+  
+  .module-item p {
+    font-size: 1.1rem;
+    color: black;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .modules-title {
+      font-size: 2rem;
+    }
+  
+    .accordion-header {
+      font-size: 1.2rem;
+    }
+  
+    .module-item {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,56 @@
+.uiux-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-img {
+  transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+      height: 250px; 
+  }
+}
