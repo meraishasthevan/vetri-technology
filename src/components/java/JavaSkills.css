@@ -1,0 +1,178 @@
+.java-skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.java-skills-header {
+  font-size: 2.5rem;
+  color: rgb(17, 2, 53);  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  padding-bottom: 50px;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.java-skills-header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #FF6347; 
+  margin: 8px auto;
+  border-radius: 2px;
+}
+
+.java-skill-box {
+  padding: 20px;
+  width: 90%; 
+  border-radius: 10px;
+  background: linear-gradient(to right, #FF6347, rgb(17, 2, 53));
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px; 
+}
+
+.slick-slide > div {
+  margin: 0 20px; 
+}
+
+.slick-track {
+  display: flex !important; 
+  gap: 15px;
+}
+
+.java-skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.java-skill-icon {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.java-skill-name {
+  font-size: 1.3rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.question-container {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #f0f8ff, #add8e6);
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+.question-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:rgb(17, 2, 53);
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.question-subtitle {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+
+.motivation-button {
+  font-size: 1.3rem;
+  background-color: #FF6347;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.motivation-button:hover {
+  background-color: #FF6347;
+  transform: scale(1.1);
+}
+
+.motivational-message {
+  font-size: 2rem;
+  color: #FF6347;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.motivational-message .highlight {
+  font-size: 2.3rem;
+  color: rgb(17, 2, 53);  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  /* padding-bottom: 50px; */
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+.motivational-message-uiux .highlight::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #FF6347; 
+  margin: 8px auto;
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .java-skills-container {
+    padding: 20px 10px;
+  }
+
+  .java-skill-box {
+    width: 90%; 
+    margin: 0 15px; 
+  }
+
+  .motivation-button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .motivational-message {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .java-skills-container {
+    padding: 20px 5px;
+  }
+
+  .java-skill-box {
+    width: 95%; 
+    margin: 0 10px;
+  }
+
+  .motivation-button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .motivational-message {
+    font-size: 1.2rem;
+  }
+}

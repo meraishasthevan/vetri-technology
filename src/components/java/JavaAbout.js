@@ -5,7 +5,7 @@ import javaImage from "../images/java-full4.jpg";
 function JavaAbout() {
   return (
     <div id="java">
-      <h1 className="main-heading">About Course</h1>
+      <h1 className="main-heading">About Java Trainings</h1>
       <div className="java-about">
         <div className="java-about-container">
           <div className="about-content">

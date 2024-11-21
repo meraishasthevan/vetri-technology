@@ -18,6 +18,10 @@ import PythonLearn from './components/python/PythonLearn';
 import Java from './components/java/Java';
 import JavaNavbar from './components/java/JavaNavbar';
 import JavaAbout from './components/java/JavaAbout';
+import JavaSkills from './components/java/JavaSkills';
+import JavaModules from './components/java/JavaModules';
+import JavaCertification from './components/java/JavaCertification';
+import JavaLearn from './components/java/JavaLearn';
 
 
 
@@ -29,7 +33,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/python" element={<> <Python/> <PythonNavbar/> <PythonAbout/> <PythonSkills/> <PythonModules/> <PythonCertification/> <PythonLearn/> </>} />
-                <Route path="/java" element={<> <Java/> <JavaNavbar/> <JavaAbout/> </>}/>
+                <Route path="/java" element={<> <Java/> <JavaNavbar/> <JavaAbout/> <JavaSkills/> <JavaModules/> <JavaCertification/> <JavaLearn /> </>}/>
                 <Route path="/ui-ux" element={<> <UiUxDesign/> <UiUxNavbar/> <UiAbout/> <UiUxSkills/> <TechnicalModules/> <UiUxCertification/> <UiLearn/> </>}/>
             </Routes>
         </div>

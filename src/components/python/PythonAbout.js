@@ -5,7 +5,7 @@ import python from '../images/py-banner2.jpg';
 function PythonAbout() {
   return (
     <div id='py-about'>
-      <h1 className="section-title">About Course</h1>
+      <h1 className="section-title">About Python Trainings</h1>
       <div className="about-section">
         <div className="python-about-container">
           <div className="about-image-py">
